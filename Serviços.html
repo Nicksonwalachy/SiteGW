@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="serviço.css">
+    <title>Serviços</title>
+    
+</head>
+<body>
+    <h1>Serviços</h1>
+    <div class="servicos">
+        <div class="servico">
+            <h2 class="titulo">Serviço 1</h2>
+            <p class="descricao">Descrição do serviço 1</p>
+            <button onclick="solicitarServico(1)">Solicitar</button>
+        </div>
+        <div class="servico">
+            <h2 class="titulo">Serviço 2</h2>
+            <p class="descricao">Descrição do serviço 2</p>
+            <button onclick="solicitarServico(2)">Solicitar</button>
+        </div>
+        <div class="servico">
+            <h2 class="titulo">Serviço 3</h2>
+            <p class="descricao">Descrição do serviço 3</p>
+            <button onclick="solicitarServico(3)">Solicitar</button>
+        </div>
+    </div>
+
+    <script>
+        function solicitarServico(servicoId) {
+            alert("Solicitação do serviço " + servicoId + " realizada com sucesso!");
+        }
+    </script>
+</body>
+</html>
