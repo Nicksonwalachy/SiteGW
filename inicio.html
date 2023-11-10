@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construções Imperiais</title>
+    <title>GW Acabamentos - Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>GW Acabamentos</h1>
+        <h1 class="left">GW Acabamentos</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -20,58 +23,64 @@
         </nav>
     </header>
     <main>
-        <section id="inicio">
-            <h2>Bem-vindo à GW Acabamentos</h2>
-            <p>Somos uma empresa especializada em construção e reforma, e atuamos na área desde 2012. Conte com a gente para seus projetos de construção, reforma, remodelação e manutenção.</p>
-        </section>
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <ul>
-                <li>Construção civil</li>
-                <li>Reforma</li>
-                <li>Remodelação</li>
-                <li>Manutenção</li>
-            </ul>
-        </section>
-        <section id="portfolio">
-            <h2>Portfólio</h2>
-            <div class="gallery">
-                <img src="image/transferir.jpg" alt="Projeto 1">
-                <img src="image/transferir.jpg" alt="Projeto 2">
-                <img src="image/transferir.jpg" alt="Projeto 3">
-            </div>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <form action="contato.js" method="POST">
-                Nome:ㅤﾠ<input 
-                    type="text" 
-                    name="nome" 
-                    placeholder="TV SAMSUNG 40'" 
-                    class="inputs">
-                <br>
-                <br>
-                valor:ㅤㅤ<input 
-                    type="text" 
-                    name="valor"
-                    placeholder="R$1900,00"
-                    class="inputs">
-                <br>
-                <br>
-                descrição: <input 
-                    type="text" 
-                    name="descricao"
-                    class="inputs"
-                >
-                <br>	
-                <button type="submit">
-                    Enviar
-                </button>
-            </form>
-        </section>
+        <div class="container">
+            <section id="inicio">
+                <h2>Bem-vindo à GW Acabamentos</h2>
+                <p>Somos uma empresa especializada em construção e reforma, e atuamos na área desde 2012. Conte com a
+                    gente para seus projetos de construção, reforma, remodelação e manutenção.</p>
+            </section>
+            <section id="servicos">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Construção civil</li>
+                    <li>Reforma</li>
+                    <li>Remodelação</li>
+                    <li>Manutenção</li>
+                </ul>
+            </section>
+            <section id="portfolio">
+                <h2>Portfólio</h2>
+
+                <div id="carouselsite" class="carousel slide" data-ride="carousel"></div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/transferir.jpg" class="img-fluid d-block">
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="image/transferir1.jpg" class="img-fluid d-block">
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="image/transferir2.jpg" class="img-fluid d-block">
+                    </div>
+                </div>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <form action="contato.js" method="POST">
+                    Nome:ㅤﾠ<input type="text" name="nome" placeholder="João Silva'" class="inputs">
+                    <br>
+                    <br>
+                    Numero: <input type="text" name="valor" placeholder="(41) 99999-9999" class="inputs">
+                    <br>
+
+                    <br>
+                    Serviços: <input type="text" name="descricao" class="inputs">
+                    <br>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar
+                    </button>
+                </form>
+            </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2022 Construções Imperiais. Todos os direitos reservados.</p>
+    <footer class="containter-fluid">
+        <label class="center">&copy; 2022 Construções Imperiais. Todos os direitos reservados.</label>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

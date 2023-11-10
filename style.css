@@ -1,9 +1,7 @@
 body {
     background-color: beige;
-    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-
 header {
     background-color: #333;
     color: white;
@@ -69,3 +67,9 @@ footer {
 	border: none;
 	margin-bottom: auto;
 	border-radius: 50px;}
+
+    .center{text-align: center; width: 100%;}
+
+    .left{
+        text-align: left;
+    }
