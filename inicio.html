@@ -13,78 +13,112 @@
 <body>
     <header>
         <h1 class="left">GW Acabamentos</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+        <nav class="right">
+            <ul class="fontnav">
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="Serviços.html">Serviços</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <section id="inicio">
+    <div>
+        <section id="inicio" class="container-xxl">
+            <br>
             <h2>Bem-vindo à GW Acabamentos</h2>
             <p>Somos uma empresa especializada em construção e reforma, e atuamos na área desde 2012. Conte com a
                 gente para seus projetos de construção, reforma, remodelação e manutenção.</p>
         </section>
         <section id="Valores">
-            <h2>Valores</h2>
-            <ul>
-                <li>Construção civil</li>
-                <li>Reforma</li>
-                <li>Remodelação</li>
-                <li>Manutenção</li>
-            </ul>
-        </section>
+                <div class="valores">
+                    <table>
+                        <td>
+                    <h2>Valores</h2>
+                    <article>Excelência: Buscar constantemente a excelência em todas as etapas, superando expectativas com soluções de alta qualidade.
+                        Integridade: Agir com honestidade, ética e transparência, mantendo altos padrões de conduta profissional e cumprindo compromissos.
+                        Inovação: Buscar soluções inovadoras e tecnologicamente avançadas, investindo em pesquisa e desenvolvimento.
+                        Sustentabilidade: Conduzir atividades de forma responsável, minimizando impactos ambientais e promovendo o desenvolvimento social e econômico.
+                        Parceria: Estabelecer relações sólidas com clientes, colaboradores e fornecedores, valorizando trabalho em equipe e construção de confiança e respeito.</article>
+                    </td>
+            </div>
+                <div>
+                    <td>
+                    <h2>Missão</h2>
+                    <article>Ser reconhecida como referência no mercado da engenharia e construção civil, destacando-se pela expertise técnica e excelência nos serviços. 
+                        Ser a escolha preferida dos clientes, colaboradores e parceiros, com reputação de confiança, integridade e comprometimento. 
+                        Expandir as operações de forma sustentável, focando na qualidade, inovação e satisfação dos clientes.</article>
+                    </td>
+                    <div>
+                        <table>
+                            <td>
+                        <h2>Visão</h2>
+                        <article>Ser uma empresa líder na engenharia e construção civil, oferecendo soluções inovadoras e de qualidade, 
+                            superando as expectativas dos clientes e entregando projetos e obras com excelência, dentro dos prazos e de forma sustentável. 
+                            Contribuir para o desenvolvimento das comunidades, promovendo crescimento econômico e bem-estar social.</article>
+                        </td>
+                </div>
+                    </table>
+            </div>
+    </section>
+
         <main>
             <section id="portfolio" class="container-xxl">
                 <h2>Portfólio</h2>
-
-                <div id="carouselsite" class="carousel slide" data-ride="carousel"></div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="image/transferir.jpg" class="img-fluid d-block">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/transferir.jpg" class="d-block w-100" alt="imagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/transferir1.jpg" class="d-block w-100" alt="imagem 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/transferir2.jpg" class="d-block w-100" alt="imagem 3">
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="image/transferir1.jpg" class="img-fluid d-block">
-                    </div>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="image/transferir2.jpg" class="img-fluid d-block">
-                    </div>
-                </div>
-            </section>
-            <section id="contato">
-                <h2>Contato</h2>
-                <form action="contato.js" method="POST">
-                    Nome:ㅤﾠ<input type="text" name="nome" placeholder="João Silva'" class="inputs">
-                    <br>
-                    <br>
-                    Numero: <input type="text" name="valor" placeholder="(41) 99999-9999" class="inputs">
-                    <br>
-
-                    <br>
-                    Serviços: <input type="text" name="descricao" class="inputs">
-                    <br>
-                    <button type="submit" class="btn btn-primary">
-                        Enviar
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                </form>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div><a href="portifolio.html">Ver Mais</a></div>
             </section>
     </div>
     </main>
+    <section id="seviços" class="center">
+    <h1>Serviços</h1>
+    <div>
+            <h2 class="titulo">Solicite um Orçamento</h2>
+            <form action="contato.js" method="POST">
+                Nome:ㅤﾠ<input type="text" name="nome" placeholder="João Silva" class="inputs">
+                <br><br>
+                Numero: <input type="text" name="valor" placeholder="(41) 99999-9999" class="inputs">
+                <br><br>
+                Descrição: <input type="text" name="descricao" class="inputs">
+                <br><br>
+            <button onclick="solicitarServico(1)" class="btn btn-primary">Solicitar</button>
+    </div>
+</form>
+    <script>
+        function solicitarServico(servicoId) {
+            alert("Solicitação do serviço " + servicoId + " realizada com sucesso!");
+        }
+    </script>
+    </section>
     <section id="Redes sociais">
         <div class="center">
             <nav>
-                <a href="https://wa.me/5541997028014"> <img src="icons/WhatsApp.png" alt="Logo WhatsApp"
+                <a href="https://wa.me/5541997028014" target="_blank"> <img src="icons/WhatsApp.png" alt="Logo WhatsApp"
                         width="50px"></a>
-                <a href="#facebook"> <img src="icons/Facebook.png" alt="Logo Facebook"
-                        width="61px"></a>
+                <a href="https://www.facebook.com/gw.acabamentosereformas?locale=pt_BR" target="_blank"> <img src="icons/Facebook.png"
+                        alt="Logo Facebook" width="61px"></a>
             </nav>
         </div>
     </section>

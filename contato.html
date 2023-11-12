@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Entre em contato conosco</h1>
-        <form id="contact-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
+    <body>
+        <header>
+            <h1 class="left">GW Acabamentos</h1>
+            <nav class="right">
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="Serviços.html">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    <section id="contato">
+        <div class="container">
+        <h2>Contato</h2>
+        <form action="contato.js" method="POST">
+            Nome:ㅤﾠ<input type="text" name="nome" placeholder="João Silva'" class="inputs">
+            <br>
+            <br>
+            Numero: <input type="text" name="valor" placeholder="(41) 99999-9999" class="inputs">
+            <br>
+
+            <br>
+            Serviços: <input type="text" name="descricao" class="inputs">
+            <br>
+            <button type="submit" class="btn btn-primary">
+                Enviar
+            </button>
         </form>
     </div>
+    </section>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

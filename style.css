@@ -2,6 +2,7 @@ body {
     background-color: beige;
     line-height: 1.6;
 }
+
 header {
     background-color: #333;
     color: white;
@@ -60,16 +61,43 @@ footer {
     width: 100%;
 }
 
-.inputs{
-	width: 15%;
-	margin: 0 auto;
-	padding: 10px;
-	border: none;
-	margin-bottom: auto;
-	border-radius: 50px;}
+.inputs {
+    width: 15%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    margin-bottom: auto;
+    border-radius: 50px;
+}
 
-    .center{text-align: center; width: 100%;}
+.center {
+    text-align: center;
+    width: 100%;
+}
 
-    .left{
-        text-align: left;
-    }
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.valores{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    padding-block-start: 0px;
+    padding-block-end: 80px;
+    padding-inline-start: 40px;
+    padding-inline-end: 0px;
+}
+
+article{
+    padding: 1rem;
+    text-align: left;
+}
+
+.fontnav{
+    font-size: 185%;
+}
