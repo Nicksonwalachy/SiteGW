@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: #F4A460;
     line-height: 1.6;
 }
 
@@ -84,7 +84,7 @@ footer {
 }
 
 .valores{
-    background-color: burlywood;
+    background-color: #FFE4B5;
     display: flex;
     flex-direction: row;
     padding-block-start: 10px;
