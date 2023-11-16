@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="serviço.css">
@@ -14,14 +15,14 @@
                 $usuario = "root";
                 $senha = "";
                 $pdo = new PDO(
-                    "mysql:host=localhost;dbname=ed2",
+                    "mysql:host=localhost;dbname=serviço",
                     $usuario,
                     $senha
                 );
     
                 // criar uma consulta ao banco
-                $produto = $pdo->query(
-                    "SELECT * FROM `produto`;"
+                $serviço = $pdo->query(
+                    "SELECT * FROM `Solicitação`;"
                 )->fetchAll();
     
                 // percorre o array/vetor de alunos
@@ -37,36 +38,35 @@
         ?>
     
     <div class="container">	
-    <img src="imagens/estoque.png"width = 500px eight = 50px>
-            <div class="margem">
-            <a href="create.php" class="animated-button4"> criar novo produto </a>
+            <div>
+            <a href="create.php"> Solicitar Orçamento </a>
         </div>
         <br>
-            <div class="content">
-        <table class="rTable">	
+            <div>
+        <table>	
         <thead>
                 <tr>
                     
                     <!--<th width "150" border=1px>#</th>-->	
                     <th width "150" border=1px>NOME</th>
-                    <th width "150" border=1px>VALOR</th>
-                    <th width "150" border=1px>DESCRIÇÃO</th>
-                    <th width "150" border=1px></th>
+                    <th width "150" border=1px>TELEFONE</th>
+                    <th width "150" border=1px>SERVIÇO</th>
+                    <th width "150" border=1px>ENDEREÇO</th>
                     
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($produto as $produto): ?>
+                <?php foreach($serviço as $serviço): ?>
                     <tr>
-                        <!--<td>   //<?//php echo($produto["id"]) ?></td>-->
-                        <td>   <?php echo($produto["nome"]) ?></td>
-                        <td width = 100px>R$ <?php echo($produto["valor"]) ?></td>
-                        <td>   <?php echo($produto["descricao"]) ?></td>
+                        <!--<td>   //<?//php echo($serviço["id"]) ?></td>-->
+                        <td>   <?php echo($serviço["nome"]) ?></td>
+                        <td width = 100px>R$ <?php echo($serviço["telefone"]) ?></td>
+                        <td>   <?php echo($serviço["serviço"]) ?></td>
                         <!--botões-->
                         
                         <td width=200px height=50px>
-                        <a href="edit.php?produto_id=<?php echo($produto["id"]); ?>" class="animated-button1">Editar</a>
-                        <a href="remove.php?produto_id=<?php echo($produto["id"]); ?>"class="animated-button2"> Remover </a>
+                        <a href="edit.php?ser$serviço_id=<?php echo($serviço["id"]); ?>">Editar</a>
+                        <a href="remove.php?ser$serviço_id=<?php echo($serviço["id"]); ?>"> Remover </a>
                         </td>
                     </tr>
                     <!--fim do codigo-->
@@ -74,5 +74,6 @@
             </tbody>
         </table>
                 </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

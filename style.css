@@ -41,17 +41,6 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -100,5 +89,5 @@ article{
 }
 
 .fontnav{
-    font-size: 185%;
+    font-size: 180%;
 }
