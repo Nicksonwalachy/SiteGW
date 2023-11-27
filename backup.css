@@ -36,18 +36,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    margin-bottom: 1rem;
-}
-
 footer {
     background-color: #333;
     color: white;
