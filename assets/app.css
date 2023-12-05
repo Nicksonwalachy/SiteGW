@@ -2,3 +2,18 @@
 @import url("footer.css");
 @import url("header.css");
 @import url("backgrounds.css");
+
+#Valores{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    padding-inline-start: 40px;
+    padding-inline-end: 10px;
+    text-align: justify;
+}
+
+article{
+    padding: 3%;
+}
