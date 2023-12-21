@@ -17,3 +17,20 @@
 article{
     padding: 3%;
 }
+
+#depoimentos{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+.div-flex{
+
+    display: flex;
+
+    align-items: center;
+    
+    justify-content: center;
+    
+    }
