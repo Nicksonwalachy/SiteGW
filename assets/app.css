@@ -12,17 +12,13 @@
     padding-inline-start: 40px;
     padding-inline-end: 10px;
     text-align: justify;
+    margin-top: 1%;
 }
 
 article{
     padding: 3%;
 }
-
-#depoimentos{
-    text-align: center;
-}
-
-h2{
+h2, h3{
     text-align: center;
 }
 .div-flex{
@@ -34,3 +30,13 @@ h2{
     justify-content: center;
     
     }
+
+    .inputs{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        border: none;
+        margin-bottom: auto;
+        border-radius: 50px;}
+
+    
